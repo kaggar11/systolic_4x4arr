@@ -2,7 +2,7 @@
 
 This repo has the 4x4 Systolic Array implementation with a Weight Stationary Dataflow.
 
-The simulations were run on Modelsim. The following are the output activation values obtained from the array from an RTL Simulation.
+The simulations were run using scripts with modelsim commands. The following are the output activation values obtained from the array from an RTL Simulation.
 ![SIM_OUT](./docs/sim_out_values.png)
 
 The synthesis has been using Synopsys Design Compiler. The script has been provided in the synth folder.
