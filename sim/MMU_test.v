@@ -75,11 +75,19 @@ module test_TPU;
       
       @(posedge clk);
       data_arr=32'h 05000000;
+
+      @(posedge clk);
+      data_arr=32'h 00000000;
       
    end
    
    initial begin
-      $monitor("[$monitor] time=%0t y3=0x%0h, y2=0x%0h, y1=0x%0h, y0=0x%0h", $time, acc_out[127:96], acc_out[95:64], acc_out[63:32], acc_out[31:0]);
+      $monitor("[OUTPUT] time=%0t y3=0x%0h, y2=0x%0h, y1=0x%0h, y0=0x%0h", $time, acc_out[127:96], acc_out[95:64], acc_out[63:32], acc_out[31:0]);
+   end
+
+   initial begin
+      #10000
+      $finish(1);
    end
       
 endmodule
