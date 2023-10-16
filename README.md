@@ -17,7 +17,7 @@ bash vsim.sh
 The following are the output activation values obtained from the array from an RTL Simulation.
 ![SIM_OUT](./docs/sim_out_values.png)
 
-The synthesis has been using Synopsys Design Compiler. The script has been provided in the synth folder.
+The synthesis has been using Synopsys Design Compiler and ASU's 7nm PDK. The script has been provided in the synth folder.
 
 To run synthesis, use the following command from *synth* folder.
 ```
